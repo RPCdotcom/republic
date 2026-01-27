@@ -182,6 +182,11 @@ journalctl -u republicd -f
 republicd status --node tcp://localhost:43657 | jq '.sync_info'
 ```
 
+- ÖRnek Sonuç ; 
+
+<img width="630" height="199" alt="image" src="https://github.com/user-attachments/assets/28199746-3346-4976-b6d6-696b345a2eec" />
+
+
 ## Genel Cüzdan Oluşturma & Validatör Kurulum ; 
 
 ```bash
