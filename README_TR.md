@@ -50,19 +50,24 @@ source $HOME/.bash_profile
 ## 5. Binary Çekelim
 ```bash
 VERSION="v0.1.0"
+
 mkdir -p $HOME/.republicd/cosmovisor/genesis/bin
 
 curl -L "https://media.githubusercontent.com/media/RepublicAI/networks/main/testnet/releases/${VERSION}/republicd-linux-amd64" -o republicd
 chmod +x republicd
 ```
+
 ```bash
 mv republicd $HOME/.republicd/cosmovisor/genesis/bin/
+ln -s $HOME/.republicd/cosmovisor/genesis $HOME/.republicd/cosmovisor/current
+```
+```bash
+sudo ln -s $HOME/.republicd/cosmovisor/genesis/bin/republicd /usr/local/bin/republicd
 ```
 
-## 6. Symlink : 
-
+- Kontrol Çekelim ; 
 ```bash
-ln -s $HOME/.republicd/cosmovisor/genesis $HOME/.republicd/cosmovisor/current
+republicd version
 ```
 
 ## 6. Init ; 
