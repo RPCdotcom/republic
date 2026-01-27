@@ -205,7 +205,7 @@ republicd tx staking create-validator \
 --amount 1000000000000000000000arai \
 --pubkey="$(republicd tendermint show-validator --node tcp://localhost:43657)" \
 --moniker "Validator Adiniz" \
---identity "" \
+--identity "keybaseidnizyoksabosbirakabilirsiniz" \
 --details "Aciklamakismi" \
 --website "website linkiniz yoksa twitter linkiniz" \
 --commission-rate "0.05" \
