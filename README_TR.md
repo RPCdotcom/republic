@@ -228,3 +228,17 @@ republicd tx staking create-validator \
 - Validatör Explorer Kontrol ; 
 
 - Link : https://explorer.republicai.io/validators
+
+
+## Yedeklenecekler - PC'nize USB'nize vb. ;
+
+- Cüzdan kelimeleri.
+
+- Config İçinde ; 
+
+<img width="948" height="585" alt="image" src="https://github.com/user-attachments/assets/f66b32ea-806c-492f-98ba-e142ec9752cf" />
+
+- data içinde ; 
+
+<img width="918" height="444" alt="image" src="https://github.com/user-attachments/assets/412665f6-5b45-4e2a-bd67-8500d1dcf47d" />
+
