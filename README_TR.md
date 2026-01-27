@@ -197,3 +197,26 @@ republicd keys add $REPUBLIC_WALLET
 - Cüzdana faucet lazım DC Faucet kanalından adminden token istiyoruz ; 
 
 <img width="1080" height="382" alt="image" src="https://github.com/user-attachments/assets/bfb8669d-edb6-408a-be99-cd1e7ac49f42" />
+
+- Validatör Oluşturma ;
+
+```bash
+republicd tx staking create-validator \
+--amount 1000000000000000000000arai \
+--pubkey="$(republicd tendermint show-validator --node tcp://localhost:43657)" \
+--moniker "Validator Adiniz" \
+--identity "" \
+--details "Aciklamakismi" \
+--website "website linkiniz yoksa twitter linkiniz" \
+--commission-rate "0.05" \
+--commission-max-rate "0.15" \
+--commission-max-change-rate "0.02" \
+--min-self-delegation "1" \
+--from $REPUBLIC_WALLET \
+--chain-id raitestnet_77701-1 \
+--gas auto \
+--gas-adjustment 1.5 \
+--gas-prices "250000000arai" \
+--node tcp://localhost:43657
+```
+
