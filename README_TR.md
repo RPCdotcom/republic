@@ -193,3 +193,7 @@ republicd keys add $REPUBLIC_WALLET
 
 <img width="931" height="250" alt="image" src="https://github.com/user-attachments/assets/1ab87988-a630-4c3d-ac1e-0f0bd27b2d74" />
 
+
+- Cüzdana faucet lazım DC Faucet kanalından adminden token istiyoruz ; 
+
+<img width="1080" height="382" alt="image" src="https://github.com/user-attachments/assets/bfb8669d-edb6-408a-be99-cd1e7ac49f42" />
