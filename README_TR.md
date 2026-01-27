@@ -177,6 +177,11 @@ journalctl -u republicd -f
 - Loglardaki block sayısı explorer ile uyuşuyorsa SYNC olmuşsunuz demektir.
 - Explorer : https://explorer.republicai.io/blocks
 
++ Kontrol ; 
+```bash
+republicd status --node tcp://localhost:43657 | jq '.sync_info'
+```
+
 ## Genel Cüzdan Oluşturma & Validatör Kurulum ; 
 
 ```bash
