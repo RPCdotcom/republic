@@ -190,7 +190,7 @@ republicd status --node tcp://localhost:43657 | jq '.sync_info'
 ## Genel Cüzdan Oluşturma & Validatör Kurulum ; 
 
 ```bash
-republicd keys add $REPUBLIC_WALLET
+republicd keys add $REPUBLIC_WALLET --home $HOME/.republicd
 ```
 
 - Sizden cüzdan için şifre isteyecek yazacaksınız unutmayacağınız birşey olsun, sonrasında bir daha doğrulamak için isteyecek yazacaksınız. Görünmezdir o yüzden yazdığınızdan emin olun.
