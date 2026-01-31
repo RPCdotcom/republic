@@ -307,3 +307,15 @@ republicd tx staking delegate validatorvaloperadresi \
 
 <img width="1047" height="861" alt="image" src="https://github.com/user-attachments/assets/d885087b-204f-405b-93c0-b04ab4d20a5b" />
 
+## Unjail ; 
+
+```bash
+republicd tx slashing unjail \
+--from wallet \
+--chain-id raitestnet_77701-1 \
+--gas auto \
+--gas-adjustment 1.5 \
+--gas-prices 1000000000arai \
+--node tcp://localhost:43657 \
+-y
+```
