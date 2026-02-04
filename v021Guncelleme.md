@@ -32,6 +32,21 @@ chmod +x republicd_v021
 sudo mv republicd republicd_v0.2.0_backup
 sudo mv republicd_v021 republicd
 ```
+
+```bash
+cd
+```
+```bash
+cd /usr/local/bin
+mv republicd republicd_backup_pre_v0.2.0
+```
+```bash
+cp $HOME/.republicd/cosmovisor/genesis/bin/republicd /usr/local/bin/republicd
+```
+```bash
+chmod +x /usr/local/bin/republicd
+```
+
 # 7. Başlatalım
 ```bash
 sudo systemctl daemon-reload
