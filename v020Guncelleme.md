@@ -22,8 +22,8 @@ chmod +x republicd_v2
 ```
 # 6. Eski Binary'i Yedekliyip Yeniyi Koyalım
 ```bash
-mv republicd republicd_v0.1.0_backup
-mv republicd_v2 republicd
+sudo mv republicd republicd_v0.1.0_backup
+sudo mv republicd_v2 republicd
 ```
 # 7. Başlatalım
 ```bash
