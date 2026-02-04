@@ -49,7 +49,7 @@ source $HOME/.bash_profile
 
 ## 5. Binary Çekelim
 ```bash
-VERSION="v0.1.0"
+VERSION="v0.2.1"
 
 mkdir -p $HOME/.republicd/cosmovisor/genesis/bin
 
