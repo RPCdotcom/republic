@@ -37,7 +37,7 @@ cd
 ```
 ```bash
 cd /usr/local/bin
-mv republicd republicd_backup_pre_v0.2.0
+mv republicd republicd_backup_pre_v0.1.0
 ```
 ```bash
 cp $HOME/.republicd/cosmovisor/genesis/bin/republicd /usr/local/bin/republicd
