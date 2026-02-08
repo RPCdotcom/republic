@@ -50,9 +50,11 @@ source $HOME/.bash_profile
 ## 5. Binary Çekelim
 ```bash
 VERSION="v0.2.1"
-
+```
+```bash
 mkdir -p $HOME/.republicd/cosmovisor/genesis/bin
-
+```
+```bash
 curl -L "https://media.githubusercontent.com/media/RepublicAI/networks/main/testnet/releases/${VERSION}/republicd-linux-amd64" -o republicd
 chmod +x republicd
 ```
