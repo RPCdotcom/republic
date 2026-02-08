@@ -56,6 +56,8 @@ mkdir -p $HOME/.republicd/cosmovisor/genesis/bin
 ```
 ```bash
 curl -L "https://media.githubusercontent.com/media/RepublicAI/networks/main/testnet/releases/${VERSION}/republicd-linux-amd64" -o republicd
+```
+```bash
 chmod +x republicd
 ```
 
