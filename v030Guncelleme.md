@@ -8,11 +8,11 @@
 
 # 1. Güncelleme İçin Gereklilikler
 ```bash
-mkdir -p /root/.republicd/cosmovisor/upgrades/v0.3.0/bin
+mkdir -p $HOME/.republicd/cosmovisor/upgrades/v0.3.0/bin
 ```
 # 2. Cosmovisor Upgrades'e Gidelim
 ```bash
-cd /root/.republicd/cosmovisor/upgrades/v0.3.0/bin
+cd $HOME/.republicd/cosmovisor/upgrades/v0.3.0/bin
 ```
 
 # 3. Yeni Binary İndirelim
