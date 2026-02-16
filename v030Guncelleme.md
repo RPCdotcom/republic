@@ -18,7 +18,7 @@ wget -O republicd_v030 https://github.com/RepublicAI/networks/releases/download/
 
 # 4. Doğrulayalım
 ```bash
-echo "bf0c88fda3ec40d8b991f87105c46ac6ddd7901d735213748de2c14e1b63a2a5 republicd_v021" | sha256sum -c
+echo "bf0c88fda3ec40d8b991f87105c46ac6ddd7901d735213748de2c14e1b63a2a5 republicd_v030" | sha256sum -c
 ```
 
 <img width="1244" height="88" alt="image" src="https://github.com/user-attachments/assets/f1fc330b-c713-4299-99a1-29c92d52ca0a" />
