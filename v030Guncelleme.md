@@ -1,71 +1,46 @@
 
 # COSMOVİSOR İLE KURANLAR İÇİN ; 
 
+- Upgrade height: 326250 ( Block )
 
-# 1. Nodeyi Durduralım
+- Upgrade name: v0.3.0
+
+
+# 1. Güncelleme İçin Gereklilikler
 ```bash
-sudo systemctl stop republicd
+mkdir -p /root/.republicd/cosmovisor/upgrades/v0.3.0/bin
 ```
-# 2. Cosmovisor Genesis'e Gidelim
+# 2. Cosmovisor Upgrades'e Gidelim
 ```bash
-cd $HOME/.republicd/cosmovisor/genesis/bin
+cd /root/.republicd/cosmovisor/upgrades/v0.3.0/bin
 ```
 
 # 3. Yeni Binary İndirelim
 ```bash
-wget -O republicd_v030 https://github.com/RepublicAI/networks/releases/download/v0.3.0/republicd-linux-amd64
+wget -O republicd https://github.com/RepublicAI/networks/releases/download/v0.3.0/republicd-linux-amd64
 ```
 
 # 4. Doğrulayalım
 ```bash
-echo "bf0c88fda3ec40d8b991f87105c46ac6ddd7901d735213748de2c14e1b63a2a5 republicd_v030" | sha256sum -c
+echo "bf0c88fda3ec40d8b991f87105c46ac6ddd7901d735213748de2c14e1b63a2a5  republicd" | sha256sum -c
 ```
 
 <img width="1244" height="88" alt="image" src="https://github.com/user-attachments/assets/f1fc330b-c713-4299-99a1-29c92d52ca0a" />
 
 # 5. Yetkiyi Verelim
 ```bash
-chmod +x republicd_v030
-```
-# 6. Eski Binary'i Yedekliyip Yeniyi Koyalım
-```bash
-sudo mv republicd republicd_v0.2.1_backup
-sudo mv republicd_v030 republicd
+chmod +x republicd
 ```
 
-- CLI Komutları için Güncelleme
+# 6. Version Kontrol
 
 ```bash
-cd
-```
-```bash
-cd /usr/local/bin
-sudo mv republicd republicd_backup_pre_v0.2.1
-```
-```bash
-sudo cp $HOME/.republicd/cosmovisor/genesis/bin/republicd /usr/local/bin/republicd
-```
-```bash
-chmod +x /usr/local/bin/republicd
+./republicd version
 ```
 
-# 7. Başlatalım
-```bash
-sudo systemctl daemon-reload
-sudo systemctl enable republicd
-sudo systemctl start republicd
-```
+- 326250. Blockta otomatik olarak güncellenecektir. Cosmovisor.
 
-# 8. Logları Kontrol Edelim
-```bash
-sudo journalctl -u republicd -f
-```
-
-<img width="480" height="144" alt="image" src="https://github.com/user-attachments/assets/aa1011c8-7171-4c5e-a4e9-0ae3d6abda4c" />
-
-
-# COSMOVİSORSÜZ KURANLAR İÇİN ; 
-
+# Normal Kurulum için bu işlem 326250. Blocktan Sonra YAPILMALIDIR.
 
 # 1. Nodeyi Durduralım
 ```bash
@@ -75,25 +50,19 @@ sudo systemctl stop republicd
 ```bash
 cd /usr/local/bin
 
-wget -O republicd_v0.3.0 https://github.com/RepublicAI/networks/releases/download/v0.3.0/republicd-linux-amd64
+sudo mv republicd republicd_backup_v0.2.1
+
+sudo wget -O republicd https://github.com/RepublicAI/networks/releases/download/v0.3.0/republicd-linux-amd64
+
+sudo chmod +x republicd
 ```
 
 # 3. SHA256 checksum doğrula ✅
 ```bash
-echo "d10991b623fa62ee0f3c42ad15abbaa246f89d73a82736fad090e607b7cc4b8f  republicd_v0.3.0" | sha256sum -c
+echo "bf0c88fda3ec40d8b991f87105c46ac6ddd7901d735213748de2c14e1b63a2a5  republicd" | sha256sum -c
 ```
 <img width="1244" height="88" alt="image" src="https://github.com/user-attachments/assets/a12dd09c-5bed-48b1-b35f-e505ef8ada10" />
 
-
-# 4. Yetkiyi Verelim
-```bash
-chmod +x republicd_v0.3.0
-```
-# 5. Eski Binary'i Yedekliyip Yeniyi Koyalım
-```bash
-sudo mv republicd republicd_v0.2.1_backup
-sudo mv republicd_v0.3.0 republicd
-```
 # 6. Başlatalım
 ```bash
 sudo systemctl daemon-reload
