@@ -1,3 +1,6 @@
+Bizim Kuruluma Göre Rehber ;
+
+
 ## 1. Peerleri Güncelleyelim ; 
 
 ```bash
